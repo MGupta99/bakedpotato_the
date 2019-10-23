@@ -14,9 +14,7 @@ from tweet import *
 
 import csv
 
-from pysynth import pysynth
 from data.dataLoader import *
-from models.musicInfo import *
 from models.unigramModel import *
 from models.bigramModel import *
 from models.trigramModel import *
