@@ -21,8 +21,6 @@ from models.unigramModel import *
 from models.bigramModel import *
 from models.trigramModel import *
 
-# FIXME Add your team name
-
 con_key = 'D3B8vkfi2H3Wrqd2CXdZ7C3bE'
 con_sec = 'UPOdLz2fzfPpkGQHxD3LqoQmXeuuJVjCCMeWSVQoYFLtiypeaB'
 acc_tok = '983521193797013507-kNcs4WhO3ZyIZHBl9uii18iTpdmrvZn'
@@ -478,21 +476,6 @@ def main():
     """
 
     lyricsTrained = False
-    musicTrained = False
-
-    if len(sys.argv) == 2:
-        if sys.argv[1] == "--test":
-            print("TEST MODE")
-            testLyricsModels = trainLyricModels(TESTLYRICSDIRS)
-            trigram = testLyricsModels[0].nGramCounts
-            bigram = testLyricsModels[1].nGramCounts
-            unigram = testLyricsModels[2].nGramCounts
-            output_models(unigram, output_fn = "unigram_student.txt")
-            output_models(bigram, output_fn = "bigram_student.txt")
-            output_models(trigram, output_fn = "trigram_student.txt")
-            print('Student models have been written to the TEST_OUTPUT folder')
-            sys.exit()
-
 
     print('Welcome to the ' + TEAM + ' Twitterbot!')
     while True:
