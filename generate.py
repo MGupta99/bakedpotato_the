@@ -499,7 +499,3 @@ def main():
 # This is how python tells if the file is being run as main
 if __name__ == '__main__':
     main()
-
-    # note that if you want to individually test functions from this file,
-    # you can comment out main() and call those functions here. Just make
-    # sure to call main() in your final submission of the project!
