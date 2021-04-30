@@ -19,5 +19,5 @@ thinc==7.1.1
 tinify==1.5.1
 tqdm==4.36.1
 tweepy==3.8.0
-urllib3==1.25.6
+urllib3==1.25.8
 wasabi==0.2.2
